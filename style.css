@@ -80,6 +80,15 @@ article {
     gap: 16px;
 }
 
+/* Project card class selector */
+.project-card {
+    border-left: 4px solid var(--blue);
+    background-color: var(--light-gray);
+    padding: 24px;
+    margin-top: 16px;
+    border-radius: 6px;
+}
+
 section {
     background-color: var(--white);
     padding: 32px;
