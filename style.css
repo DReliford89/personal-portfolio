@@ -72,6 +72,14 @@ main {
     margin: 32px auto;
 }
 
+/* CSS Grid for project cards */
+article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    gap: 16px;
+}
+
 section {
     background-color: var(--white);
     padding: 32px;
