@@ -1,0 +1,167 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+/* Color palette and spacing */
+:root {
+    --navy: #142B4A;
+    --blue: #2F5D8C;
+    --light-gray: #F2F5F8;
+    --white: #FFFFFF;
+    --text: #263445;
+    --spacing: 8px;
+}
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text);
+    background-color: var(--light-gray);
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 24px;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0 0 24px;
+}
+
+/* Navigation using Flexbox */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background-color: var(--blue);
+}
+
+/* Main content */
+main {
+    width: min(100% - 32px, 1000px);
+    margin: 32px auto;
+}
+
+section {
+    background-color: var(--white);
+    padding: 32px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(20, 43, 74, 0.08);
+}
+
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--navy);
+}
+
+h2 {
+    margin-top: 0;
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 8px;
+}
+
+article {
+    background-color: var(--light-gray);
+    padding: 24px;
+    margin-top: 16px;
+    border-left: 4px solid var(--blue);
+    border-radius: 6px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+/* Skills list */
+ul {
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 24px 16px;
+}
+
+/* Tablet layout */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 32px 16px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: calc(100% - 32px);
+        margin: 24px auto;
+    }
+
+    section {
+        padding: 24px;
+    }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    article {
+        padding: 16px;
+    }
+}
