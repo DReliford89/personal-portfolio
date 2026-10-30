@@ -71,7 +71,10 @@ main {
     width: min(100% - 32px, 1000px);
     margin: 32px auto;
 }
-
+/* ID selector for home page content */
+#home-content {
+    max-width: 1000px;
+}
 /* CSS Grid for project cards */
 article {
     display: grid;
