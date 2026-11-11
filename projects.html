@@ -1,48 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Projects/Work | My IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore projects in my web development portfolio.">
+  <title>Projects | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Projects and Work</h1>
-        <p>Examples of my learning and experience.</p>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="projects.html" aria-current="page">Projects/Work</a>
-            <a href="about.html">About/Contact</a>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <main>
-        <section>
-            <h2>My Projects</h2>
-            <p>This page will showcase school assignments and personal projects.</p>
-            <article class="project-card">
-                <h3>HTML Portfolio</h3>
-                <p>Placeholder: Describe this website and what you learned while building it.</p>
-            </article>
-            <article class="project-card">
-                <h3>Computer Troubleshooting</h3>
-                <p>Placeholder: Describe a troubleshooting task or technical problem you solved.</p>
-            </article>
-            <article class="project-card">
-                <h3>Future Project</h3>
-                <p>Placeholder: Add a project you complete in a future class.</p>
-            </article>
-        </section>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="site-name" href="index.html">My Portfolio</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="about.html">About / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section>
-            <h2>Work Experience</h2>
-            <p>Placeholder: Add relevant work experience, responsibilities, and skills.</p>
-        </section>
-    </main>
+  <main id="main" class="container">
+    <section class="page-intro">
+      <p class="eyebrow">My work</p>
+      <h1>Projects</h1>
+      <p>
+        Here are some examples of projects and skills I've been working on
+        throughout my web development journey.
+      </p>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 My IT Portfolio</p>
-    </footer>
+    <section class="content-section">
+      <h2>Featured Work</h2>
+
+      <div class="card-grid">
+        <article class="card project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A website designed to introduce me, share my work, and provide
+            visitors with a way to contact me.
+          </p>
+          <p class="project-detail"><strong>Skills:</strong> HTML and CSS</p>
+        </article>
+
+        <article class="card project-card">
+          <h3>Web Design Practice</h3>
+          <p>
+            Practice creating organized page layouts, readable content,
+            and consistent visual styles.
+          </p>
+          <p class="project-detail"><strong>Skills:</strong> Layout and responsive design</p>
+        </article>
+
+        <article class="card project-card">
+          <h3>Accessibility Improvements</h3>
+          <p>
+            Improving website usability through semantic HTML, keyboard
+            navigation, clear labels, and color contrast.
+          </p>
+          <p class="project-detail"><strong>Skills:</strong> Accessible web development</p>
+        </article>
+      </div>
+    </section>
+
+    <p class="back-link"><a href="index.html">Back to Home</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 My Personal Portfolio</p>
+  </footer>
 </body>
 </html>
