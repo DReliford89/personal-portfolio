@@ -1,49 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>About/Contact | My IT Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about me and contact me through my portfolio.">
+  <title>About and Contact | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="form-validation.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
-        <p>Learn more about my background and goals.</p>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects/Work</a>
-            <a href="about.html" aria-current="page">About/Contact</a>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <main>
-        <section>
-            <h2>My Background</h2>
-            <p>I am a student building my knowledge of information technology and computer troubleshooting.</p>
-            <p>Placeholder: Add more about your education, interests, and personal goals.</p>
-        </section>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="site-name" href="index.html">My Portfolio</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html" aria-current="page">About / Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section>
-            <h2>Skills and Career Goals</h2>
-            <ul>
-                <li>Computer troubleshooting</li>
-                <li>Technical support</li>
-                <li>Problem-solving</li>
-                <li>Learning HTML and web development</li>
-            </ul>
-            <p>Placeholder: Explain what IT career you hope to pursue.</p>
-        </section>
+  <main id="main" class="container">
+    <section class="page-intro">
+      <p class="eyebrow">Get to know me</p>
+      <h1>About Me</h1>
+      <p>
+        I'm developing my skills in web development and learning how to
+        create websites that are useful, welcoming, and accessible to everyone.
+      </p>
+    </section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email: your.email@example.com</p>
-            <p>Replace this placeholder with the contact information you want to share publicly.</p>
-        </section>
-    </main>
+    <section class="content-section">
+      <h2>My Web Development Journey</h2>
+      <div class="card">
+        <p>
+          I'm building my knowledge of HTML, CSS, responsive layouts,
+          and accessibility. My goal is to create websites that are
+          easy to navigate and enjoyable to use.
+        </p>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 My IT Portfolio</p>
-    </footer>
+    <section class="content-section contact-section">
+      <h2>Contact Me</h2>
+      <p>
+        Have a question or want to connect? Fill out the form below.
+        All fields are required.
+      </p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Your name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+            aria-describedby="name-error">
+          <p class="error-message" id="name-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+            aria-describedby="email-error">
+          <p class="error-message" id="email-error"></p>
+        </div>
+
+        <fieldset class="form-field">
+          <legend>What would you like to discuss?</legend>
+
+          <div class="radio-option">
+            <input type="radio" id="question" name="topic" value="Question" required>
+            <label for="question">A question</label>
+          </div>
+
+          <div class="radio-option">
+            <input type="radio" id="feedback" name="topic" value="Feedback">
+            <label for="feedback">Website feedback</label>
+          </div>
+
+          <div class="radio-option">
+            <input type="radio" id="other" name="topic" value="Other">
+            <label for="other">Something else</label>
+          </div>
+
+          <p class="error-message" id="topic-error"></p>
+        </fieldset>
+
+        <div class="form-field">
+          <label for="message">Your message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            aria-describedby="message-error"></textarea>
+          <p class="error-message" id="message-error"></p>
+        </div>
+
+        <button class="button" type="submit">Submit Message</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 My Personal Portfolio</p>
+  </footer>
 </body>
 </html>
