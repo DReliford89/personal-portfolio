@@ -66,6 +66,18 @@ The website uses a consistent color palette:
 
 Text and background combinations should be checked using the WebAIM Contrast Checker to confirm WCAG AA compliance.
 
+### WebAIM Contrast Checker Results
+
+The following color combinations were tested using the WebAIM Contrast Checker:
+
+| Text Color | Background Color | Contrast Ratio | WCAG AA |
+|---|---|---:|---|
+| #263445 | #F2F5F8 | 11.56:1 | Pass |
+| #FFFFFF | #142B4A | 14.24:1 | Pass |
+| #1F4E79 | #FFFFFF | 8.66:1 | Pass |
+
+All three tested combinations exceed the WCAG AA requirement of 4.5:1 for normal text.
+
 ## Gestalt Principles
 
 Two Gestalt principles were applied to improve the visual organization of the portfolio.
