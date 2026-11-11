@@ -40,13 +40,15 @@ Pages reviewed:
 
 After publishing the changes, run WAVE on each page and record the actual results below.
 
+
 | Page | Errors | Contrast Errors | Alerts |
 |---|---:|---:|---:|
-| Home | Complete after testing | Complete after testing | Complete after testing |
-| Projects | Complete after testing | Complete after testing | Complete after testing |
-| About / Contact | Complete after testing | Complete after testing | Complete after testing |
+| Home | 0 | 0 | 2 |
+| Projects | 0 | 0 | 1 |
+| About / Contact | 0 | 0 | 1 |
 
-Any WAVE errors found during testing should be corrected and tested again before submission.
+The WAVE results showed no accessibility errors or contrast errors on the three pages. Redundant link alerts were identified and reviewed. These alerts indicate links that may lead to the same destination and are not automatically accessibility failures.
+
 
 ## Color Contrast
 
